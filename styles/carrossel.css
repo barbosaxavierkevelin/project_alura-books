@@ -1,0 +1,67 @@
+.carrossel__title {
+    color: var(--laranja);
+    background-color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em 0 0.5em 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5rem 0;
+}
+
+.card {
+    background: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.card_description, .card__botoes, .botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description_title {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.descriptio__title_livro {
+    color: var(--azul);
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.description__text {
+    font-size: 0.85rem;
+}
+
+.card__botoes {
+    margin: 1rem 0 0;
+}
+.botoes__item {
+    margin: 0 0.5rem;
+}
+
+.botoes__anconra {
+    background-color: var(--laranja);
+    padding: 1rem 2.2rem;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    
+}
