@@ -33,3 +33,17 @@
     font-size: 14px;
     font-weight: bold;
 }
+
+@media screen and (min-width: 1024px) {
+    .topicos_titulo {
+        font-size: 1.5rem;
+    }
+
+    .topicos_link {
+        font-size:  1.5rem;
+    }
+
+    .topicos_lista {
+        padding: 0 1rem;
+    }
+}

@@ -67,4 +67,62 @@ a condiçã oaqio é: se o conteiner botão estiver checked ele procura o proxim
     color:tomato;
 }
 
+.container__titulo {
+    display: none;
+}
 
+.opcoes {
+    display: none;
+}
+
+/*media queries - usado para colocar configurações de dsign automatico a depender do tamanho da tela*/
+
+/*sempre que for usar media queria, tem que lembrar de colocar display:none, fora do media, no elemento que não deve ter, e colocar display:block outro), no elemento dentro de mídia, para indicar que, naquela condição, é para ele ser ecxibido!*/
+
+@media screen and (min-width: 1024px) {
+    .container__titulo, .container__titulo_negrito {
+        font-family: var(--fonte_secundaria);
+        font-size: 30px;
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo_negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__item {
+        padding: 1rem;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .container__imagen_transp {
+        display: none;
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .opcoes_botao:checked ~ .lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opcoes_botao {
+        display: none;
+    }
+
+}
